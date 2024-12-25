@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Doctor Spa - Thư giãn và làm đẹp chuyên nghiệp">
+    <title>Doctor Spa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #1e2a47;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2a3d71;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #ff9f00;
+            color: black;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #ff9f00;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            color: #1e2a47;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: #e9eff3;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #1e2a47;
+        }
+
+        .service-card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #1e2a47;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            background-color: #ff9f00;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #ff7a00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DOCTOR SPA</h1>
+</header>
+
+<nav>
+    <a href="#home" class="active">Trang Chủ</a>
+    <a href="#about">Giới Thiệu</a>
+    <a href="#services">Dịch Vụ</a>
+    <a href="#contact">Liên Hệ</a>
+</nav>
+
+<section id="about" class="intro">
+    <h2>Chào mừng bạn đến với không gian thư giãn của Doctor Spa</h2>
+    <p>Chúng tôi mang đến cho bạn những giây phút thư giãn tuyệt vời với dịch vụ spa cao cấp, giúp bạn phục hồi năng lượng và tái tạo sức sống.</p>
+</section>
+
+<section class="services" id="services">
+    <div class="service-card">
+        <img src="chamsocda.png" alt="Chăm sóc da">
+        <h3>Chăm sóc da</h3>
+        <p>Chăm sóc da giúp giảm căng thẳng và mang lại cảm giác thư thái tuyệt vời.</p>
+    </div>
+    <div class="service-card">
+        <img src="filler.png" alt="Cân chỉnh khuôn mặt">
+        <h3>Cân chỉnh khuôn mặt</h3>
+        <p>Các liệu pháp cân chỉnh khuôn mặt giúp bạn có khuôn mặt cân đối và tươi tắn.</p>
+    </div>
+    <div class="service-card">
+        <img src="laser.png" alt="Sử dụng thiết bị công nghệ cao">
+        <h3>Thiết bị công nghệ cao</h3>
+        <p>Ứng dụng công nghệ tiên tiến để mang lại vẻ đẹp tự nhiên và tươi mới.</p>
+    </div>
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Spa - Đặt Lịch Hẹn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #003366;
+        }
+        .form-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #003366;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            resize: none;
+            height: 100px;
+        }
+        .form-submit {
+            text-align: center;
+        }
+        .form-submit button {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-submit button:hover {
+            background-color: #002244;
+        }
+    </style>
+</head>
+<body>
+    <section class="form-section" id="contact-form">
+        <h2>Đặt Lịch Hẹn</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Họ và Tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số Điện Thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Thời Gian</label>
+                <input type="datetime-local" id="time" name="time" required>
+            </div>
+            <div class="form-submit">
+                <button type="submit">Đặt Lịch</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Doctor Spa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .review-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .review {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        .review h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .review p {
+            margin: 0;
+            color: #555;
+        }
+        .rating {
+            color: #f4b400;
+        }
+    </style>
+</head>
+<body>
+    <div class="review-section">
+        <h2>Đánh giá của khách hàng</h2>
+        <div class="review">
+            <h3>Phương Anh</h3>
+            <p class="rating">⭐️⭐️⭐️⭐️</p>
+            <p>"chắc chắn sẽ quay lại"</p>
+        </div>
+        <div class="review">
+            <h3>Trần Thị Bích Yên</h3>
+            <p class="rating">⭐️⭐️⭐️</p>
+            <p>"nhân viên chuyên nghiệp, vui vẻ"</p>
+        </div>
+        <div class="review">
+            <h3>Phương Huế</h3>
+            <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+            <p>"hài lòng"</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Doctor Spa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-item {
+            margin-bottom: 15px;
+        }
+        .contact-item span {
+            font-weight: bold;
+            color: #555;
+        }
+        .contact-item a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h2>Contact Information</h2>
+        <div class="contact-item">
+            <span>Address:</span> HD.09 - SPBH.08 - Vinhomes Ocean Park 1
+        </div>
+        <div class="contact-item">
+            <span>Hotline:</span> <a href="tel:+84123456789">(+84) 585 424424</a>
+        </div>
+        <div class="contact-item">
+            <span>Email:</span> <a href="mailto:contact@doctorspa.com">contact@doctorspa.com</a>
+        </div>
+        <div class="contact-item">
+            <span>Opening Hours:</span> 9:00 - 21:00 (Monday to Sunday)
+        </div>
+        <div class="contact-item">
+            <span>Social Media:</span> 
+            <a href="https://www.facebook.com/people/Doctor-Spa/61569285452066/" target="_blank">Facebook</a> | 
+            <a href="https://zalo.com/doctorspa" target="_blank">Zalo</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<footer>
+    <p>&copy; 2024 Doctor Spa. Tất cả các quyền thuộc về chúng tôi.</p>
+    <p><a href="mailto:contact@doctorspa.com">contact@doctorspa.com</a></p>
+</footer>
+
+</body>
+</html>
